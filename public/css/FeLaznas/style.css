@@ -1,0 +1,1091 @@
+/* css untuk semua element (dipake berkali") */
+:root {
+    --main : #136c20;
+    --sf-main : #168827;
+    --secondary : #b0dfa0;
+    --st-black : #1b231c;
+    --sf-black : #29342b;
+    --sf-white : rgb(226, 226, 226);
+    --orange : #ff982f;
+    --indigo: #6610f2;
+    --purple: #6f42c1;
+    --yellow: #ffc107;
+    --green: #28a745;
+    --teal: #20c997;
+    --cyan: #17a2b8;
+    --section-space : 50px;
+  }
+  
+  body {
+    font-family: 'Rubik', sans-serif;
+  }
+  
+  section {
+    margin-top: var(--section-space);
+  }
+  
+  h4 {
+    color: var(--main);
+  }
+  
+  h5 {
+    color: var(--main);
+    font-weight: 600;
+    font-size: .9rem;
+  }
+  
+  .btn-show-details {
+    background-color: var(--secondary);
+    border: none;
+    font-weight: 700;
+    color: var(--main);
+    padding: 0.5rem 1rem;
+    float: right;
+  }
+  
+  .nav-item, .get-involved, .btn-search, .search-input, .search-action, .submit-search, .carousel-button, .btn-show-details,
+  .card-list .title, footer p {
+    font-size: 0.8rem;
+  }
+  
+  /* css untuk navbar */
+  .navbar-toggler-icon {
+    width: 1.3rem;
+    height: 1.3rem;
+  }
+  
+  .btn-show-details:hover {
+    background-color: var(--main);
+    color: var(--secondary);
+  }
+  
+  .navbar-toggler:focus {
+    box-shadow: none;
+  }
+  
+  .nav-item, .btn-search {
+    font-weight: 700;
+    color: var(--sf-black);
+  }
+  
+  .nav-item:hover, .btn-search:hover {
+    color: var(--st-black);
+  }
+  
+  .navbar-brand p {
+    font-size: 0.9rem;
+    font-weight: 500;
+  }
+  
+  .get-involved {
+    background-color: var(--main);
+    color: white;
+    outline: none;
+    border: none;
+    font-weight: 400;
+    padding: 0.5rem 1rem;
+  }
+  
+  .get-involved:hover {
+    background-color: var(--sf-main);
+    color: var(--sf-white);
+  }
+  
+  /* css untuk semua carousel */
+  .carousel-inner {
+    background-color: var(--main);
+    border-radius: 20px;
+    padding: 4rem 3rem;
+    color: white;
+  }
+  
+  .carousel-item .row .order:first-child {
+    order: 2;
+  }
+  .carousel-item .row .order:last-child {
+    order: 1;
+    margin-bottom: 1rem;
+  }
+  
+  .carousel-item .title {
+    font-weight: bold;
+  }
+  
+  .carousel-item .subtitle {
+    color: var(--sf-white);
+    font-weight: 300;
+    font-size: 0.9rem;
+  }
+  
+  .carousel-item img {
+    width: 100%;
+    height: 300px;
+  }
+  
+  /* css buat quick link */
+  .link-wrapper {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    flex-wrap: wrap;
+  }
+  
+  .card-list {
+    flex: 0 0 14.87%;
+    margin: 10px;
+    border: solid 1px var(--sf-white);
+    padding: 1rem 0;
+    text-decoration: none;
+    color: var(--st-black);
+  }
+  
+  .card-list:hover {
+    color: var(--main);
+    transform: scale(1.1);
+  }
+  
+  .card-list:hover .view-details {
+    opacity: 1!important;
+  }
+  
+  .card-list .donate-icon {
+    font-size: 2rem;
+    margin: 3rem;
+  }
+  
+  .card-list .view-details {
+    font-size: 0.7rem;
+    text-decoration: underline;
+    opacity: 0;
+  }
+  
+  .card-list .title {
+    font-weight: 500;
+  }
+  
+  /* css untuk waktu sholat */
+  .prayer-times {
+    background-image: url("/image/BDwLWz.png");
+    background-size: cover;
+    background-position: center;
+    border-radius: 20px;
+    padding: 3rem;
+  }
+  
+  .prayer-times h3 {
+    color: var(--main);
+    font-weight: 600;
+    font-size: 1.2rem;
+  }
+  
+  .prayer-times span {
+    color: var(--orange);
+  }
+  
+  .prayer-times .times img {
+    width: 35px;
+    height: 35px;
+  }
+  
+  .prayer-times .times span {
+    color: var(--main);
+    font-weight: 400;
+  }
+  
+  .khotib .row{
+    border: solid 1px var(--sf-white);
+    padding: 20px;
+  }
+  
+  .khotib .col {
+    align-self: center;
+  }
+  
+  .khotib img {
+    width: auto;
+    height: 512px;
+    max-width: 512px;
+    margin: auto;
+    display: block;
+    border-radius: 100%;
+  }
+  
+  .khotib h2 {
+    color: var(--main);
+    font-size: 36px;
+  }
+  
+  .khotib h5 {
+    margin-top: -0.8rem;
+    margin-bottom: -0.1rem;
+    font-size: 18px;
+    font-weight: 500;
+  }
+  
+  .khotib h5 span {
+    font-size: 22px;
+  }
+  
+  .khotib h1 {
+    font-size: 38px;
+  }
+  
+  /* css untuk event */
+  .event h5, .event p {
+    margin: 0;
+  }
+  
+  .event .date {
+    color: var(--st-black);
+  }
+  
+  .event .day {
+    font-size: 0.9rem;
+  }
+  
+  .event p {
+    color: var(--sf-black);
+    font-size: 0.9rem;
+  }
+  
+  /* css untuk carousel upcoming event */
+  .event .carousel-indicators {
+    margin: 0;
+    position: relative;
+  }
+  
+  .event .carousel-inner {
+    background-color: white;
+    padding: 0;
+  }
+  
+  .event .carousel-indicator{
+    background-color: rgb(184, 184, 184);
+    width: 15px;
+    border-radius: 10px;
+  }
+  
+  .event .carousel-item {
+    
+  }
+  
+  .event .carousel-item img {
+    height: 192px;
+  }
+  
+  .upcoming-event h5 {
+    color: var(--sf-main);
+  }
+  
+  /* css untuk carousel bawahnya event */
+  .event-banner .carousel-control-next, .event-banner .carousel-control-prev {
+    width: 5.5%;
+  }
+  
+  .event-banner .carousel-inner {
+    padding: 3rem;
+  }
+  
+  .event-banner .carousel-item .title {
+    font-weight: 500;
+    font-size: 2rem;
+  }
+  
+  .event-banner .carousel-item .name {
+    color: var(--sf-white);
+    margin: 1.5rem 0 0 0;
+  }
+  
+  .event-banner .carousel-item .subtitle {
+    color: var(--sf-white);
+    font-weight: 300;
+    font-size: 0.9rem;
+  }
+  
+  /* css untuk galeri */
+  .photo {
+    background-image: linear-gradient(#c6ebba, white);
+    padding: 2rem;
+  }
+  
+  .photo-page {
+    background-image: none;
+  }
+  
+  .photo .image-wrapper {
+    height: 290px;
+    display: flex;
+    justify-content: center;
+  }
+  
+  /* css untuk bagian donasi */
+  .donation-wrapper {
+    background-color: var(--main);
+    padding: 100px;
+  }
+  
+  .donation {
+    max-width: 768px;
+    margin: auto;
+  }
+  
+  .donation h1,h3 {
+    color: white;
+  }
+  
+  .donation p {
+    color: var(--secondary);
+  }
+  
+  .donation button {
+    background-color: white;
+    font-size: 0.9rem;
+    font-weight: 600;
+    color: var(--main);
+    margin-top: 20px;
+  }
+  
+  .donation-page h3 {
+    font-size: 19px;
+  }
+  
+  .donation-page .px {
+    padding-left: 180px;
+  }
+  
+  /* css untuk bagian subcribe */
+  .subcribe {
+    border-radius: 20px;
+    padding: 50px;
+    top: -50px;
+    position: relative;
+    background-color: white;
+  }
+  
+  .subcribe h3 {
+    color: var(--main);
+  }
+  
+  .subcribe p {
+    color: var(--sf-black);
+    font-weight: 600;
+    font-size: 0.9rem;
+  }
+  
+  .subcribe input, .message input {
+    padding: 4px 16px;
+    width: 100%;
+    position: relative;
+  }
+  
+  .subcribe button {
+    position: relative;
+    bottom: 1px;
+    max-width: 86px;
+  }
+  
+  /* css untuk footer */
+  
+  
+  footer h4 {
+    text-align: center;
+  }
+  
+  footer .contact{
+    justify-content: center;
+  }
+  
+  footer .contact p {
+   width: auto;
+  }
+  
+  .contact .menu, footer.menu {
+   text-align: center;
+  }
+  
+  
+  
+  .message {
+    position: relative;
+    text-align: center;
+  }
+  
+  .message input {
+    padding: 7px 15px;
+  }
+  
+  .btn-send {
+    background-color: var(--secondary);
+    color: var(--main);
+    font-size: 0.9rem;
+    font-weight: 600;
+    padding: 10px 20px;
+  }
+  
+  
+  .btn-search {
+    cursor: pointer;
+  }
+  
+  .search-wrapper {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: #ffffff91;
+    display: flex;
+  }
+  
+  .search {
+    margin: auto;
+    align-items: center;
+    width: 95%;
+    height: 20%;
+    background-color: var(--main);
+    padding: 1.5rem;
+    border-radius: 0.25rem;
+  }
+  
+  .search-action {
+    margin: 0.8rem 0;
+  }
+  
+  .cancel-search {
+    text-decoration: none;
+    color: white;
+  }
+  
+  .cancel-search:hover {
+    color: var(--sf-white);
+    text-decoration: underline;
+  }
+  
+  
+  
+  /* Halaman About */
+  
+  /* card takmirs  */
+  .bg-indigo{
+    background-color: var(--indigo);
+  }
+  .bg-cyan{
+    background-color: var(--cyan);
+  }
+  .card-takmirs {
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    width: 20rem;
+    padding: 5px;
+    border-radius: 5px;
+    margin: 15px 15px 15px 15px;
+    background-color: white;
+  }
+  
+  .card-takmirs h3{
+     color: black;
+     font-size: x-large;
+     font-weight: bold;
+  }
+  
+  .card-takmirs h4{
+     font-size: large;
+     font-weight: bold;
+  }
+  .list-card-takmirs{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    flex-wrap: wrap;
+  }
+  
+  
+  .btn-hide{
+    background-color: var(--secondary);
+    border: none;
+    font-weight: 700;
+    color: var(--main);
+    padding: 0.5rem 1rem;
+    outline:none;
+    float: right;
+    position: absolute;
+  }
+  
+  .btn-hide:hover{
+     background-color: var(--main);
+    color: var(--secondary);
+  }
+  
+  .container-card-takmirs button{
+    background-color: var(--secondary);
+    border: none;
+    font-weight: 700;
+    color: var(--main);
+    padding: 0.5rem 1rem;
+    outline:none;
+  }
+  .list-card-takmirs button:hover{
+    background-color: var(--main);
+    color: var(--secondary);
+  
+  }
+  
+  .card-takmirs:hover {
+    box-shadow: 0 8px 1
+    6px 0 rgba(0,0,0,0.2);
+  }
+  
+  .card-img {  
+    border-radius: 5px 5px 5px 5px;
+    height: 250px;
+  }
+  
+  .container-card-takmirs {
+    padding: 2px 16px;
+    text-align: center;
+    font-family: sans-serif;
+  }
+  
+  
+  /* .card-pfile-masjid {
+    max-width: 768px;
+    margin: auto;
+  } */
+  .card-profile-masjid {
+    box-shadow: 0 8px 8px 0 rgba(0,0,0,0.2); 
+    padding: 50px;
+    position: relative;
+    background-color: var(--main);
+  }
+  .card-profile-masjid h5{
+    color: rgb(250, 246, 246);
+  }
+  
+  .card-sejarah-masjid {
+    border-radius: 20px;
+    padding: 50px;
+    top: -50px;
+    position: relative;
+    background-color: white;
+  }
+  
+  .card-sejarah-masjid h4{
+    position: relative;
+  }
+  .card-sejarah-masjid h3{
+    color: black;
+    text-align: center;
+  }
+  .card-sejarah-masjid p{
+    text-align: center;
+  }
+  
+  
+  .kas .row h4{
+    font-size: medium;
+  }
+  
+  
+  /* Halaman Event */
+  
+  .hal-event .row h4{
+    color: black;
+  }
+  .hal-event .carousel-inner {
+     background-color: white;
+    padding: 0;
+  }
+  
+  .hal-event .carousel-item img {
+    width: 100%;
+    height: 450px;
+  }
+  
+  .hal-event .event-carousel {
+    background-image: linear-gradient(var(--main), white);
+  }
+  
+  .hal-event .carousel-control-prev-icon,
+  .hal-event .carousel-control-next-icon {
+    height: 100px;
+    width: 100px;
+    outline: black;
+    background-size: 100%, 100%;
+    border-radius: 50%;
+    background-image: none;
+  }
+  
+  .hal-event .carousel-control-next-icon:after
+  {
+    content: '>';
+    font-size: 55px;
+    color: black;
+  }
+  
+  .hal-event .carousel-control-prev-icon:after {
+    content: '<';
+    font-size: 55px;
+    color: black;
+  }
+  
+  /* Halaman Donate */
+  
+  .card-donate-masjid {
+    border-radius: 20px;
+    padding: 50px;
+    top: -50px;
+    position: relative;
+    background-color: white;
+  }
+  
+  .card-donate-masjid h4{
+    position: relative;
+  }
+  .card-donate-masjid h3{
+    color: black;
+    text-align: left;
+  }
+  .card-donate-masjid p{
+    text-align: center;
+  }
+  
+  /* Halaman service */
+  .list-group .title{
+    background-color: var(--main);
+    text-align: center;
+    color: white;
+  }
+  .list-group .title:hover{
+    background-color: var(--sf-main);
+    text-align: center;
+    
+  }
+  
+  
+  /* css untuk responsive */
+  /* Small devices (landscape phones, 576px and up) */
+  @media (min-width: 576px) {
+    .search {
+      width: 90%;
+    }
+  
+    .subcribe input {
+      width: 75%;
+      left: 25px;
+    }
+    
+    .subcribe button {
+      left: -25px;
+    }
+  
+   .btn-send {
+      position: absolute;
+      top: -9px;
+      right: 0;
+      width: 120px!important;
+    }
+  
+    
+  }
+
+     
+  /* css untuk card donation  */
+
+.card-donation {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  max-width: 350px;
+  margin: auto;
+  text-align: center;
+  font-family: arial;
+  border-radius: 20px;
+  transition: transform .2s;
+  background-color: white;
+}
+
+.card-donation p{
+  font-family: 'Courier New', Courier, monospace;
+  text-align: left;
+  margin: 10px;
+  
+}
+.card-donation .title {
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+}
+.card-donation img{
+  width: 100%;
+  height: 350px;
+  border-radius: 20px;
+  margin: auto;
+  
+}
+
+.card-donation:hover{
+  transform: scale(1.2);
+}
+
+/* progress donasi */
+ .progress-donation {
+  background-color: #d8d8d8;
+  border-radius: 50px;
+  height: 25px;
+  width: 300px;
+  margin: auto;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+ .progress-donation-done{
+  background:linear-gradient(to left, #168827, #136c20);
+  box-shadow: 0 3px 3px -5px #168827, 0 2px 5px #168827;
+  color: #ff982f;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content:center ;
+  border-radius: 50px; 
+  height: 100%;
+  width: 0;
+  opacity: 0;
+  transition: 1s ease;
+}
+
+
+/* button donasi */
+.btn-donation{
+  background-color: var(--secondary);
+  border: none;
+  font-weight: 700;
+  color: var(--main);
+  padding: 0.5rem 1rem;
+}
+.btn-donation:hover {
+  background-color: var(--main);
+  color: var(--secondary);
+}
+
+
+/* halaman detail donasi */
+.foto-donasi {
+  display: flex;
+  justify-content: center;
+  height: 500px;
+  
+}
+.foto-donasi img{
+  width: 50%;
+  border-radius: 50px;
+
+}
+
+.progress-donation-detail {
+  background-color: #d8d8d8;
+  border-radius: 50px;
+  height: 25px;
+  width: 900px;
+  margin: auto;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+.progress-donation-done-detail{
+  background:linear-gradient(to left, #168827, #136c20);
+  box-shadow: 0 3px 3px -5px #168827, 0 2px 5px #168827;
+  color: #ff982f;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content:center ;
+  border-radius: 50px; 
+  height: 100%;
+  width: 0;
+  opacity: 0;
+  transition: 1s ease;
+}
+
+/* header atau navbar */
+
+ .right-nav a{
+  margin: 5px;
+  color: #136c20;
+}
+
+
+@media (max-width: 575.98px) { 
+  .card-donation:hover{
+    transform: scale(1.1);
+  }
+  .foto-donasi {
+    display: flex;
+    justify-content: center;
+    height: auto;
+    
+  }
+  .foto-donasi img{
+    width: 100%;
+    border-radius: 50px;
+    height: 400px;
+  }
+  .title-detail-donation {
+    text-align: left;
+    
+  }
+
+  
+
+}
+
+@media (max-width: 1199.98px) { 
+  .progress-donation {
+    background-color: #d8d8d8;
+    border-radius: 50px;
+    height: 25px;
+    width: 250px;
+    margin: auto;
+    margin-top: 5px;
+    margin-bottom: 5px;
+  }
+
+  .foto-donasi {
+    display: flex;
+    justify-content: center;
+    height: auto;
+    
+  }
+  .foto-donasi img{
+    width: 100%;
+    border-radius: 50px;
+    height: 600PX;
+  }
+  .title-detail-donation {
+    text-align: left;
+  }
+
+
+}
+
+@media (max-width: 991.98px) { 
+  .progress-donation {
+    background-color: #d8d8d8;
+    border-radius: 50px;
+    height: 25px;
+    width: 300px;
+    margin: auto;
+    margin-top: 5px;
+    margin-bottom: 5px;
+  }
+
+  .foto-donasi {
+    display: flex;
+    justify-content: center;
+    height: auto;
+    
+  }
+  .foto-donasi img{
+    width: 100%;
+    border-radius: 50px;
+    height: 400px;
+  }
+  .title-detail-donation {
+    text-align: left;
+  }
+
+
+  .progress-donation-detail {
+    background-color: #d8d8d8;
+    border-radius: 50px;
+    height: 25px;
+    width: 550px;
+    margin: auto;
+    margin-top: 5px;
+    margin-bottom: 5px;
+  }
+
+}
+
+@media (max-width: 767.98px) { 
+  .progress-donation {
+    background-color: #d8d8d8;
+    border-radius: 50px;
+    height: 25px;
+    width: 200px;
+    margin: auto;
+    margin-top: 5px;
+    margin-bottom: 5px;
+  }
+
+  .foto-donasi {
+    display: flex;
+    justify-content: center;
+    height: auto;
+    
+  }
+  .foto-donasi img{
+    width: 100%;
+    border-radius: 50px;
+    height: 400px;
+  }
+  .title-detail-donation {
+    text-align: left;
+  }
+
+  .progress-donation-detail {
+    background-color: #d8d8d8;
+    border-radius: 50px;
+    height: 25px;
+    width: 450px;
+    margin: auto;
+    margin-top: 5px;
+    margin-bottom: 5px;
+  }
+
+}
+
+@media (max-width: 575.98px) { 
+  .progress-donation {
+    background-color: #d8d8d8;
+    border-radius: 50px;
+    height: 25px;
+    width: 300px;
+    margin: auto;
+    margin-top: 5px;
+    margin-bottom: 5px;
+  }
+
+
+  .progress-donation-detail {
+    background-color: #d8d8d8;
+    border-radius: 50px;
+    height: 25px;
+    width: 300px;
+    margin: auto;
+    margin-top: 5px;
+    margin-bottom: 5px;
+  }
+}
+
+
+@media (min-width: 1200px) { 
+  .foto-donasi {
+    display: flex;
+    justify-content: center;
+    height: auto;
+    
+  }
+  .foto-donasi img{
+    width: 100%;
+    border-radius: 50px;
+    height: 600px;
+  }
+  .title-detail-donation {
+    text-align: left;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+  }
+ }
+  
+  /* Medium devices (tablets, 768px and up) */
+  @media (min-width: 768px) {
+    .search {
+      width: 80%;
+    }
+  
+    .carousel-item .row .order:first-child {
+      order: 1;
+    }
+    .carousel-item .row .order:last-child {
+      order: 2;
+    }
+  
+    .event-banner .carousel-inner {
+      height: 350px;
+    }
+  
+    .subcribe input {
+      width: 50%;
+    }
+  
+    footer h4, footer .menu, .message{
+      text-align: left;
+    }
+  
+    footer .contact p {
+      width: 100%;
+    }
+  
+  
+  }
+  
+  /* Large devices (desktops, 992px and up) */
+  @media (min-width: 992px) {
+    .get-involved {
+      width: auto!important;
+    }
+  
+    .search {
+      width: 70%;
+    }
+  
+    .event-banner .carousel-inner {
+      height: 310px;
+    }
+  
+   .card-takmirs {
+      width: 15rem;
+      display: block;
+      margin-bottom: 20px;
+    }
+  
+    
+  
+  .container-card-takmirs button{
+    background-color: var(--secondary);
+    border: none;
+    font-weight: 700;
+    color: var(--main);
+    padding: 0.5rem 1rem;
+  }
+  
+  .card-sejarah-masjid {
+    border-radius: 20px;
+    padding: 50px;
+    top: -50px;
+    position: relative;
+    background-color: white;
+  }
+    
+  }
+  
+  /* Extra large devices (large desktops, 1200px and up) */
+  @media (min-width: 1200px) {
+    .search {
+      width: 60%;
+      padding: 2rem;
+    }
+  
+    .event-banner .carousel-inner {
+      height: 270px;
+    }
+  
+    .subcribe input {
+      width: 40%;
+    }
+  
+    #kebersihan_epl_side {
+      display: none!important;
+    }
+  
+    #kebersihan_epl_bottom[style*='display: block'] {
+      display: flex!important;
+    }
+  }
+  
+  @media (max-width: 1200px) {
+    #kebersihan_epl_bottom {
+      display: none!important;
+    }
+    #kebersihan_epl_side[style*='display: block'] {
+      display: flex!important;
+    }
+  }
